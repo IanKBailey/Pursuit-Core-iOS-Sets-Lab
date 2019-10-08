@@ -10,9 +10,11 @@ let numbers = [1,1,2,4,4,4,6,6,7,8]
 
 var numbersWithNoDuplicates = [Int]()
 
-// Your code here
+var set1: Set<Int> = [1,1,2,4,4,4,6,6,7,8]
 
-//assert(numbersWithNoDuplicates == [1,2,4,6,7,8], "Was expecting [1,2,4,6,7,8], but got \(numbersWithNoDuplicates)")
+numbersWithNoDuplicates = [Int](set1).sorted()
+
+assert(numbersWithNoDuplicates == [1,2,4,6,7,8], "Was expecting [1,2,4,6,7,8], but got \(numbersWithNoDuplicates)")
 
 // Questions Two
 
